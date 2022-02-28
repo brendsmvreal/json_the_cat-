@@ -6,7 +6,7 @@ const fetchBreedDescription = function(breedName, cb) {
     } else {
       const data = JSON.parse(body);
       if (data.length === 0) {
-        return cb("Breed not existent");
+        return cb("Breed not existent!");
       } else {
         return cb(null, data[0].description);
       }
